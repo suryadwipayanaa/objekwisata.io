@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Corinthia&family=EB+Garamond:wght@400;500;600;700&family=Imperial+Script&family=Love+Light&family=Luxurious+Script&family=Montserrat:wght@300&family=Nanum+Brush+Script&family=Poppins:ital,wght@0,400;0,500;0,600;1,300&family=Style+Script&display=swap');
+*{
+font-family: sans-serif;
+}
+
+.depan h1{
+    font-family: 'Style Script', cursive;
+}
+
+.depan{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    background-color: #fff;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#objek{
+    padding: 5px;
+}
+
+#objek p , #objek h2, #objek h4, #objek hr{
+    color: #fff;
+}
+
+#wawasan{
+    padding: 5px;
+}
+
+#wawasan p , #wawasan h2, #wawasan h4, #wawasan hr{
+    color: #fff;
+}
+
+#hubungi{
+    padding: 5px;
+}
+
+#hubungi p , #hubungi h2, #hubungi h4, #hubungi label{
+    color: #fff;
+}
+
+h1 , h2 , h3 , h4 ,h5 {
+    font-family: sans-serif;
+}
+
+.navbar{
+    position: relative;
+}
+.navbar-brand{
+    font-weight: bold;
+    font-family: 'Style Script', cursive;
+    letter-spacing: 3px;
+}
+
+.container .judul a{
+    font-size: 2.2em;
+}
+
+.fa-battle-net{
+    font-size: 2.5em;
+    position: absolute;
+    left: 65px;
+    color: #fff;
+}
+
+.container ul li a{
+    font-weight: 300;
+}
+
+.gambar{
+    width: 100%;
+    height: 100vh;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: 100%;
+}
+
+section .judul a{
+    font-weight: 100;
+    font-size: 2.5em;
+}
+
+.row .col-6 .gambar2{
+    width: 100%;
+}
+
+.row .col-6 .gambar2 img{
+    width: 100%;
+}
+
+.sarana .row{
+    justify-content: space-evenly;
+}
+
+.sarana ul li{
+    display: inline-block;
+    list-style: none;
+}
+
+
+.kunjungan .progress{
+    margin-bottom: 20px;
+}
+
+.footer a{
+    color: #ffff;
+    text-decoration: none;
+    line-height: none;
+}
+
+.footer .col-4{
+    line-height: 10px;
+
+}
+
+.footer .tengah{
+    margin-top: 130px;
+}
+
+.footer .copi{
+    margin-top: 180px;
+}
+
+.footer{
+    position: relative;
+    color: #ffff;
+}
+
+.footer .kanan{
+    margin-top: 90px;
+}
+
+.footer .bawah{
+position: absolute;
+bottom: 0;
+left: 10%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.card{
+    position: relative;
+}
+
+.love .fa-heart{
+    font-size: 2em;
+    background-color:#0275d8;
+    padding: 5px;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-bottom-right-radius: 3px;
+    cursor: pointer;
+}
+
+
+/* h2 untuk judul  */
+
+body h2{
+    font-family: 'Style Script', cursive;
+    font-size: 3em;
+    letter-spacing: 3px;
+}
+
+
+/* jquery gass om */
+
+.beranda{
+    transform: scale(0.2);
+    transition: 2s ease all;
+}
+
+.beranda.active{
+    transform: scale(1);
+}
+
+.judul h2{
+    opacity: 0;
+    transform: translate(0,-100px);
+    transition: 1s ease all;
+}
+
+.judul h2.k1{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.atas .kiri{
+    opacity: 0;
+    transform: translate(-100px,0);
+    transition: 1s ease all;
+}
+
+.atas .kiri.k2{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.atas .kanan{
+    opacity: 0;
+    transform: translate(100px,0);
+    transition: 1s ease all;
+}
+
+.atas .kanan.k3{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+
+.bawah .kiri{
+    opacity: 0;
+    transform: translate(-100px,0);
+    transition: 1s ease all;
+}
+
+.bawah .kiri.k4{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+
+.bawah .kanan{
+    opacity: 0;
+    transform: translate(100px,0);
+    transition: 1s ease all;
+}
+
+.bawah .kanan.k5{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.judul-sarana{
+    opacity: 0;
+    transform: translate(0,-100px);
+    transition: 1s ease all;
+}
+
+.judul-sarana.k6{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.ni .card{
+    opacity: 0;
+    transform: translate(0,-100px);
+    transition: 1s ease all;
+}
+
+.ni .card.k7{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.judul-kunjungan{
+    opacity: 0;
+    transform: translate(0,-100px);
+    transition: 1s ease all;
+}
+
+.judul-kunjungan.k8{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.kunjungan .progress{
+    opacity: 0;
+    transform: translate(0,-100px);
+    transition: 1s ease all;
+}
+
+.kunjungan .progress.k9{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.judul-bungi{
+    opacity: 0;
+    transform: translate(0,-100px);
+    transition: 1s ease all;
+}
+
+.judul-bungi.k10{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.hubungi form{
+    opacity: 0;
+    transform: scale(0.2);
+    transition: 2s ease all;
+}
+
+.hubungi form.k11{
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+.tampung{
+    opacity: 0;
+    transform: scale(0.2);
+    transition: 2s ease all;
+}
+
+.tampung.arah{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.tampung.leb{
+    opacity: 0;
+}
+
+.maju{
+    opacity: 0;
+    transform: translate(0,-100px);
+    transition: 1s ease all;
+}
+
+.maju.active{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+
+.depan{
+    transition: 3s ease all;
+    transform: translate(0,0);
+}
+
+.depan.active{
+    transform: translate(-100%,0);
+}
+
+.music{
+    display: none;
+}
+
+
+.kedua{
+    display: none;
+    transform: translate(0,-100px);
+    transition: 2s ease all;
+}
+
+.kedua.active{
+    display: block;
+    transform: translate(0,0);
+}
+
+.kedua.active .card{
+    opacity: 0;
+    transition: 1s ease all;
+    transform: translate(0,-100px);
+}
+
+.kedua.active .card.aktive{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+
+.section-wawasan .judul h2{
+    opacity: 0;
+    transform: translate(0,-100px);
+    transition: 1s ease all;
+}
+
+.section-wawasan .judul h2.k40{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+
+.wawasan-kiri{
+    opacity: 0;
+    transform: translate(-100px,0);
+    transition: 1s ease all;
+}
+
+.wawasan-kiri.k41{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.wawasan-kanan{
+    opacity: 0;
+    transform: translate(100px,0);
+    transition: 1s ease all;
+}
+
+.wawasan-kanan.k42{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+
+.wawasan-kiri-bawah{
+    opacity: 0;
+    transform: translate(-100px,0);
+    transition: 1s ease all;
+}
+
+.wawasan-kiri-bawah.k43{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.wawasan-kanan-bawah{
+    opacity: 0;
+    transform: translate(100px,0);
+    transition: 1s ease all;
+}
+
+.wawasan-kanan-bawah.k44{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+
+section .contact-kiri{
+    opacity: 0;
+    transform: translate(0,-100px);
+    transition: 1s ease all;
+}
+
+section .contact-kiri.k45{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+
+section .contact-kanan{
+    opacity: 0;
+    transform: translate(0,-100px);
+    transition: 1s ease all;
+}
+
+section .contact-kanan.k46{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+
+
+/* jquery stop  */
+
+

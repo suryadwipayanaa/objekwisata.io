@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Objek Wisata</title>
+    <!-- CSS only -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script src="jquery-ui-1.13.0.custom/jquery-ui.js"></script>
+    <script src="jquery-ui-1.13.0.custom/jquery-ui.css"></script>
+    <script src="https://code.jquery.com/ui/1.13.0-rc.3/jquery-ui.min.js" integrity="sha256-R6eRO29lbCyPGfninb/kjIXeRjMOqY3VWPVk6gMhREk=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
+</head>
+<body>
+
+  <!-- kelas depan -->
+    <div class="depan" id="box">
+      <div class="container">
+      <div class="judul text-center mb-4">
+        <h1>Welcome To Garuda Wisnu Kencana</h1>
+      </div>
+      <div class="row">
+        <div class="col-sm-10 col-md-6">
+          <p style="letter-spacing: 1px; line-height: 40px;">Pembangunan tempat wisata di Bali GWK, di prakarsai oleh Yayasan Garuda Wisnu Kencana pada tahun 1992. Pembangunan Garuda Wisnu Kencana Bali dengan tujuan menjadikan tempat wisata GWK Bali Landmark dari tempat wisata budaya yang terkenal ke mancanegara. Salah satu pendiri dari Yayasan Garuda Wisnu Kencana adalah I Nyoman Nuarta yang juga konseptor dan arsitek patung Garuda Wisnu Kencana.</p>
+        </div>
+        <div class="col-sm-10 col-md-6">
+         <video controls src="gwk.mp4" width="100%"></video>
+        </div>
+      </div>
+
+      <div class="d-grid gap-2 col-3 mx-auto">
+        <a class="hilang" onclick="togglePlay()" href="#navbar"><button class="btn btn-primary mt-5 mb-5" type="button">Open Website</button></a>
+      </div>
+    </div>
+    </div>
+
+  <!-- end kelas depan -->
+
+  <div class="music">
+    <audio controls id="musik">
+        <source class="lagu" src="./BALI WORLD MUSIC, GUS TEJA, FEEL WITH LOVE.mp3" type="audio/mpeg">
+    </audio>
+</div>
+
+    <!-- navbar -->
+    <nav class="navbar maju navbar-expand-lg navbar-dark fixed-top bg-primary" id="navbar">
+        <div class="container">
+            <div class="judul">
+              <i class="fab fa-battle-net"></i>
+          <a class="navbar-brand" href="#">Garuda Wisnu Kencana</a>
+        </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#beranda">Beranda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#objek">Objek Wisata</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#sarana">Sarana Akomodasi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#wawasan">Wawasan</a>
+              </li>
+
+    
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!-- tutup navbar -->
+
+
+    <!-- caraousel -->
+    <section class="beranda" id="beranda mb-5">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+              <div class="gambar">
+            <img src="./gambar/gwk.jpg" class="d-block w-100" alt="...">
+        </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Garuda Wisnu Kencana</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia odit nihil ex?</p>
+              <button type="button" class="btn btn-primary">Jelajahi</button>
+              <button type="button" class="btn btn-success" style="color: black;">Video</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="gambar">
+            <img src="./gambar/gwk-2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+                <h2>Garuda Wisnu Kencana</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia odit nihil ex?</p>
+                <button type="button" class="btn btn-primary">Jelajahi</button>
+              <button type="button" class="btn btn-success" style="color: black;">Video</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="gambar">
+            <img src="./gambar/gwk-3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+                <h2>Garuda Wisnu Kencana</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia odit nihil ex?</p>
+                <button type="button" class="btn btn-primary">Jelajahi</button>
+              <button type="button" class="btn btn-success" style="color: black;">Video</button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- tutup caraousel -->
+
+    <!-- objek wisata -->
+    <section class="section bg-primary" id="objek">
+        <div class="container">
+        <div class="judul text-center mb-3 mt-5">
+            <h2>Objek Wisata</h2>
+        </div>
+
+        <div class="row atas">
+            <div class="col-6 kiri">
+                <div class="title">
+                    <h2>Garuda Wisnu Kencana</h2>
+                </div>
+                <p>Taman Budaya Garuda Wisnu Kencana (bahasa Inggris: Garuda Wisnu Kencana Cultural Park), atau kerap disebut dengan GWK, adalah sebuah taman wisata budaya di bagian selatan pulau Bali. Taman wisata ini terletak di Desa Ungasan, Kecamatan Kuta Selatan, Kabupaten Badung, kira-kira 40 kilometer di sebelah selatan Denpasar, ibu kota provinsi Bali</p>
+                <button type="button" class="btn btn-success mb-2">Selanjutnya</button>
+                <h4>Follow Me On Website</h4>
+                <button type="button" class="btn btn-danger">Facebook</button>
+                <button type="button" class="btn btn-success">Twitter</button>
+                <button type="button" class="btn btn-warning">Youtube</button>
+            </div>
+            <div class="col-6 kanan">
+                <div class="gambar2">
+                    <img src="./gambar/gwk-2.jpg" data-tilt> 
+                    <p class="text-center mt-1" style="font-size: 0.8em;">Gambar Patung Garuda Wisnu Kencana</p>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <hr>
+
+        <div class="row bawah">
+            <div class="col-6 kiri">
+                <div class="gambar2">
+                    <img src="./gambar/gwk-3.jpg"  data-tilt>
+                    <p class="text-center mt-1" style="font-size: 0.8em;">Gambar Patung Garuda Wisnu Kencana</p>
+                </div>
+            </div>
+
+            <div class="col-6 kanan">
+                <div class="title">
+                    <h2>Garuda Wisnu Kencana</h2>
+                </div>
+                <p>Di kawasan itu terdapat juga Patung Garuda yang tepat di belakang Plaza Wisnu adalah Plaza Garuda di mana patung kepala Garuda setinggi 18 meter ditempatkan. Pada saat ini, Plaza Garuda menjadi titik fokus dari sebuah lorong besar pilar berukir batu kapur yang mencakup lebih dari 4000 meter persegi luas ruang terbuka yang dinamai Lotus Pond. </p>
+                <button type="button" class="btn btn-success mb-2">Selanjutnya</button>
+                <h4>Follow Me On Website</h4>
+                <button type="button" class="btn btn-danger">Facebook</button>
+                <button type="button" class="btn btn-success">Twitter</button>
+                <button type="button" class="btn btn-warning">Youtube</button>
+            </div>
+            <hr>
+
+            <nav aria-label="...">
+                <ul class="pagination" style="display: flex; justify-content: center;">
+                  <li class="page-item disabled">
+                    <a class="page-link">Previous</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item active" aria-current="page">
+                    <a class="page-link" href="#">2</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
+        </div>
+
+    </div>
+    </section>
+
+    <!-- akhir objek wisata -->
+
+
+    <!-- sarana dan akomodasi -->
+    <section class="sarana ni" id="sarana">
+        <div class="judul-sarana text-center mt-5 mb-5">
+            <h2>Sarana & Akomodasi</h2>
+            <p class="text-center" style="font-size:0.8em;">The Best In Garuda Wisnu Kencana</p>
+        </div>
+    <div class="container">
+    <div class="row">
+
+        <div class="col-4">
+            <div class="card" data-tilt style="width: 18rem;">
+                <img src="./gambar/srn-2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title text-center">Souvenir </h4>
+                  <div class="star">
+                  <ul>
+                      <li><i class="fas fa-star" style="color: gold;"></i></li>
+                      <li><i class="fas fa-star" style="color: gold;"></i></li>
+                      <li><i class="fas fa-star" style="color: gold;"></i></li>
+                      <li><i class="fas fa-star" style="color: gold;"></i></li>
+                      <li><i class="fas fa-star-half" style="color: gold;"></i></li>
+                  </ul>
+                </div>
+                  <p class="card-text">Sepertinya berbelanja adalah kegiatan yang tidak boleh ketinggalan saat berlibur, bukan? Itulah sebabnya dihadirkan Kencana Souvenir Shop di dalam GWK. Tempat belanja di Bali memang banyak tetapi tempat yang menyediakan suvenir</p>
+                  <p>Start From Rp.50.000 - Rp.300.000</p>
+                </div>
+
+                <div class="love">
+                  <i class="fas fa-heart"></i>
+                </div>
+              </div>
+        </div>
+
+        
+        <div class="col-4 ">
+            <div class="card" data-tilt style="width: 18rem;">
+                <img src="./gambar/srn-1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title text-center">Penginapan Privat</h4>
+                  <ul>
+                    <li><i class="fas fa-star" style="color: gold;"></i></li>
+                    <li><i class="fas fa-star" style="color: gold;"></i></li>
+                    <li><i class="fas fa-star" style="color: gold;"></i></li>
+                    <li><i class="fas fa-star" style="color: gold;"></i></li>
+                </ul>
+                  <p class="card-text">Area yang tenang dan penuh dengan privasi disediakan GWK untuk mendukung liburan Anda di Bali. Jadi saat Anda tidak ingin bersusah payah menikmati seluruh fasilitas GWK Anda sudah dapat langsung beranjak ke penginapan yang tersedia.</p>
+                  <p>Rp.500.000</p>
+                </div>
+                <div class="love">
+                  <i class="fas fa-heart"></i>
+                </div>
+              </div>
+        </div>
+
+        
+        <div class="col-4">
+            <div class="card" data-tilt style="width: 18rem;">
+                <img src="./gambar/srn-3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title text-center">Segway</h4>
+                  <ul>
+                    <li><i class="fas fa-star" style="color: gold;"></i></li>
+                    <li><i class="fas fa-star" style="color: gold;"></i></li>
+                    <li><i class="fas fa-star" style="color: gold;"></i></li>
+                    <li><i class="fas fa-star" style="color: gold;"></i></li>
+                    <li><i class="fas fa-star-half" style="color: gold;"></i></li>
+                </ul>
+                  <p class="card-text">Dengan luas mencapai 240 hektar, anda tentunya tidak akan memiliki tenaga atau waktu yang cukup untuk depat mengeksplorasi setiap bagian di Garuda Wisnu Kencana Cultural Park Bali ini..</p>
+                  <p>Rp.75.000</p>
+                </div>
+                <div class="love">
+                  <i class="fas fa-heart"></i>
+                </div>
+              </div>
+        </div>
+
+        <div class="d-grid gap-2 col-3 mx-auto">
+          <button id="go" class="btn btn-primary mt-5 mb-5" type="button">Show All</button>
+        </div>
+
+        </section>
+    </div>
+</div>
+
+<!-- show all active -->
+
+    <!-- sarana dan akomodasi -->
+    <section class="sarana kedua" id="sarana">
+      <div class="judul-sarana text-center mt-5 mb-5">
+          <h2>Sarana & Akomodasi</h2>
+          <p class="text-center" style="font-size:0.8em;">The Best In Garuda Wisnu Kencana</p>
+      </div>
+  <div class="container">
+  <div class="row">
+
+      <div class="col-4">
+          <div class="card" data-tilt style="width: 18rem;">
+              <img src="./gambar/srn-2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title text-center">Souvenir </h4>
+                <div class="star">
+                <ul>
+                    <li><i class="fas fa-star" style="color: gold;"></i></li>
+                    <li><i class="fas fa-star" style="color: gold;"></i></li>
+                    <li><i class="fas fa-star" style="color: gold;"></i></li>
+                    <li><i class="fas fa-star" style="color: gold;"></i></li>
+                    <li><i class="fas fa-star-half" style="color: gold;"></i></li>
+                </ul>
+              </div>
+                <p class="card-text">Sepertinya berbelanja adalah kegiatan yang tidak boleh ketinggalan saat berlibur, bukan? Itulah sebabnya dihadirkan Kencana Souvenir Shop di dalam GWK. Tempat belanja di Bali memang banyak tetapi tempat yang menyediakan suvenir</p>
+                <p>Start From Rp.50.000 - Rp.300.000</p>
+              </div>
+
+              <div class="love">
+                <i class="fas fa-heart"></i>
+              </div>
+            </div>
+      </div>
+
+      
+      <div class="col-4 ">
+          <div class="card" data-tilt style="width: 18rem;">
+              <img src="./gambar/srn-1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title text-center">Penginapan Privat</h4>
+                <ul>
+                  <li><i class="fas fa-star" style="color: gold;"></i></li>
+                  <li><i class="fas fa-star" style="color: gold;"></i></li>
+                  <li><i class="fas fa-star" style="color: gold;"></i></li>
+                  <li><i class="fas fa-star" style="color: gold;"></i></li>
+              </ul>
+                <p class="card-text">Area yang tenang dan penuh dengan privasi disediakan GWK untuk mendukung liburan Anda di Bali. Jadi saat Anda tidak ingin bersusah payah menikmati seluruh fasilitas GWK Anda sudah dapat langsung beranjak ke penginapan yang tersedia.</p>
+                <p>Rp.500.000</p>
+              </div>
+              <div class="love">
+                <i class="fas fa-heart"></i>
+              </div>
+            </div>
+      </div>
+
+      
+      <div class="col-4">
+          <div class="card" data-tilt style="width: 18rem;">
+              <img src="./gambar/srn-3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title text-center">Segway</h4>
+                <ul>
+                  <li><i class="fas fa-star" style="color: gold;"></i></li>
+                  <li><i class="fas fa-star" style="color: gold;"></i></li>
+                  <li><i class="fas fa-star" style="color: gold;"></i></li>
+                  <li><i class="fas fa-star" style="color: gold;"></i></li>
+                  <li><i class="fas fa-star-half" style="color: gold;"></i></li>
+              </ul>
+                <p class="card-text">Dengan luas mencapai 240 hektar, anda tentunya tidak akan memiliki tenaga atau waktu yang cukup untuk depat mengeksplorasi setiap bagian di Garuda Wisnu Kencana Cultural Park Bali ini..</p>
+                <p>Rp.75.000</p>
+              </div>
+              <div class="love">
+                <i class="fas fa-heart"></i>
+              </div>
+            </div>
+      </div>
+
+      <div class="col-4">
+        <div class="card" data-tilt style="width: 18rem;">
+            <img src="./gambar/srn-4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title text-center">Segway</h4>
+              <ul>
+                <li><i class="fas fa-star" style="color: gold;"></i></li>
+                <li><i class="fas fa-star" style="color: gold;"></i></li>
+                <li><i class="fas fa-star" style="color: gold;"></i></li>
+                <li><i class="fas fa-star" style="color: gold;"></i></li>
+                <li><i class="fas fa-star-half" style="color: gold;"></i></li>
+            </ul>
+              <p class="card-text">Restoran ini selain menyajikan sajian yang lezat, juga menawarkan pemandangan yang indah. Pemandangan indah mulai dari pantai barat</p>
+              <p>Start From Rp.50.000-Rp.300.000</p>
+            </div>
+            <div class="love">
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+    </div>
+
+    
+    <div class="col-4">
+      <div class="card" data-tilt style="width: 18rem;">
+          <img src="./gambar/studiofoto.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title text-center">Studio Foto</h4>
+            <ul>
+              <li><i class="fas fa-star" style="color: gold;"></i></li>
+              <li><i class="fas fa-star" style="color: gold;"></i></li>
+              <li><i class="fas fa-star" style="color: gold;"></i></li>
+              <li><i class="fas fa-star" style="color: gold;"></i></li>
+              <li><i class="fas fa-star-half" style="color: gold;"></i></li>
+          </ul>
+            <p class="card-text">GWK Photo Studio yang ada di dalam GWK Bali dapat mengabadikan momen-momen perjalanan anda selama di GWK.</p>
+            <p>Start From Rp.10.000-Rp.300.000</p>
+          </div>
+          <div class="love">
+            <i class="fas fa-heart"></i>
+          </div>
+        </div>
+  </div>
+
+
+  
+  <div class="col-4">
+    <div class="card" data-tilt style="width: 18rem;">
+        <img src="./gambar/aula.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-title text-center">Aula Besar</h4>
+          <ul>
+            <li><i class="fas fa-star" style="color: gold;"></i></li>
+            <li><i class="fas fa-star" style="color: gold;"></i></li>
+            <li><i class="fas fa-star" style="color: gold;"></i></li>
+            <li><i class="fas fa-star" style="color: gold;"></i></li>
+            <li><i class="fas fa-star-half" style="color: gold;"></i></li>
+        </ul>
+          <p class="card-text">Konser artis mancanegara maupun pesta pernikahan Anda dapat dilaksanakan di dalam GWK. Tepatnya di dua area ini yaitu di Lotus Pond dan Indraloka Garden. Kedua tempat tersebut tentu saja menawarkan atmosfer yang berlainan.</p>
+        </div>
+        <div class="love">
+          <i class="fas fa-heart"></i>
+        </div>
+      </div>
+</div>
+
+<div class="col-4">
+  <div class="card" data-tilt style="width: 18rem;">
+      <img src="./gambar/parkir.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title text-center">Parkir</h4>
+        <ul>
+          <li><i class="fas fa-star" style="color: gold;"></i></li>
+          <li><i class="fas fa-star" style="color: gold;"></i></li>
+          <li><i class="fas fa-star" style="color: gold;"></i></li>
+          <li><i class="fas fa-star" style="color: gold;"></i></li>
+          <li><i class="fas fa-star-half" style="color: gold;"></i></li>
+      </ul>
+        <p class="card-text">Tersedia halaman parkir yang sangat luas di GWK Bali yang terbagi menjadi parkiran sepeda motor, parkiran mobil pribadi serta parkiran bus pariwisata.</p>
+      </div>
+      <div class="love">
+        <i class="fas fa-heart"></i>
+      </div>
+    </div>
+</div>
+
+<div class="col-4">
+  <div class="card" data-tilt style="width: 18rem;">
+      <img src="./gambar/halte.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title text-center">Halte Bus</h4>
+        <ul>
+          <li><i class="fas fa-star" style="color: gold;"></i></li>
+          <li><i class="fas fa-star" style="color: gold;"></i></li>
+          <li><i class="fas fa-star" style="color: gold;"></i></li>
+          <li><i class="fas fa-star" style="color: gold;"></i></li>
+          <li><i class="fas fa-star-half" style="color: gold;"></i></li>
+      </ul>
+        <p class="card-text">GWK Bali adalah salah satu tempat wisata populer di Bali, hal tersebut menjadikan GWK sebagai lokasi trayek bis Sarbagita. Rute bis Sarbagita ini mulai dari kota Denpasar hingga ke halte GWK.</p>
+      </div>
+      <div class="love">
+        <i class="fas fa-heart"></i>
+      </div>
+    </div>
+</div>
+
+
+<div class="col-4">
+  <div class="card" data-tilt style="width: 18rem;">
+      <img src="./gambar/toilet.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title text-center">Toilet</h4>
+        <ul>
+          <li><i class="fas fa-star" style="color: gold;"></i></li>
+          <li><i class="fas fa-star" style="color: gold;"></i></li>
+          <li><i class="fas fa-star" style="color: gold;"></i></li>
+          <li><i class="fas fa-star" style="color: gold;"></i></li>
+          <li><i class="fas fa-star-half" style="color: gold;"></i></li>
+      </ul>
+        <p class="card-text">Toilet di tempat wisata GWK Bali ini termasuk bersih dan cukup banyak tersebar di lokasi-lokasi yang strategis dekat berbagai lokasi pertunjukan seperti Street Theater dan Amphitheater.</p>
+      </div>
+      <div class="love">
+        <i class="fas fa-heart"></i>
+      </div>
+    </div>
+</div>
+
+      </section>
+  </div>
+</div>
+
+  
+<!-- akhir show all -->
+
+<!-- akhir sarana komodasi -->
+
+
+    <!-- awal kunjunngan wisatwan -->
+    <section class="kunjungan bg-primary mt-3" id="wawasan">
+        <div class="container">
+            <div class="judul-kunjungan text-center mt-5 mb-3">
+                <h2>Kunjungan wisatawan</h2>
+            </div>
+        
+            <div class="progress">
+                <label class="ps-3 pe-3">Amerika</label>
+                <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+              </div>
+              <div class="progress">
+                <label class="ps-3 pe-3">Australia</label>
+                <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+              </div>
+              <div class="progress">
+                <label class="ps-3 pe-3">China</label>
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+              </div>
+              <div class="progress">
+                <label class="ps-3 pe-3">Eropa</label>
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+              </div>
+        </div>
+
+    <!-- wawasan -->
+    <section class="section-wawasan" id="wawasan">
+      <div class="container">
+      <div class="judul text-center mb-4 mt-5">
+          <h2>Wawasan</h2>
+      </div>
+
+      <div class="row wawasan">
+          <div class="col-6 wawasan-kiri">
+            <div class="tittle">
+              <h2>Garuda Wisnu Kencana</h2>
+            </div>
+              <p>Taman Budaya Garuda Wisnu Kencana (bahasa Inggris: Garuda Wisnu Kencana Cultural Park), atau kerap disebut dengan GWK, adalah sebuah taman wisata budaya di bagian selatan pulau Bali. Taman wisata ini terletak di Desa Ungasan, Kecamatan Kuta Selatan, Kabupaten Badung, kira-kira 40 kilometer di sebelah selatan Denpasar, ibu kota provinsi Bali.Di sini berdiri megah sebuah landmark atau maskot Bali, yakni patung Garuda Wisnu Kencana yang menggambarkan sosok Dewa Wisnu menunggangi tunggangannya, Garuda, setinggi 121 meter.[1]
+
+                Area Taman Budaya Garuda Wisnu Kencana berada di ketinggian 146 meter di atas permukaan tanah atau 263 meter di atas permukaan laut.[1]</p>
+          </div>
+          <div class="col-6 wawasan-kanan">
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./gambar/wawasan.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./gambar/wawasan-2.jfif" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./gambar/wawasan-3.jfif" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+          </div>
+      </div>
+
+      <hr>
+      <hr>
+
+      <div class="row bawah">
+        <div class="col-6 wawasan-kiri-bawah">
+
+          <div class="gambar2">
+            <img src="./gambar/wawasan-view.jfif">
+            <p class="text-center mt-1" style="font-size: 0.8em;">Gambar Patung Garuda Wisnu Kencana</p>
+        </div>
+
+        
+        </div>
+
+          <div class="col-6 wawasan-kanan-bawah">
+            <div class="tittle">
+              <h2>Tempat Rekreasi di GWK</h2>
+            </div>
+              <p>Lotus Pond adalah area outdoor terbesar di Garuda Wisnu Kencana (GWK) dan Taman Budaya, kemungkinan besar, di Bali. Dengan demikian, Lotus Pond adalah tempat yang tepat dan hanya untuk mengadakan acara outdoor skala besar.
+
+                Selama bertahun-tahun, GWK telah dipercaya untuk skala besar diadakan, baik nasional maupun internasional, acara di Lotus Pond seperti konser musik, pertemuan internasional, partai besar. Lotus Pond adalah tempat yang unik dengan pilar batu kapur di sisi dan patung megah Garuda di latar belakang.
+                
+                Lotus Pond berawal dari teratai. Teratai adalah simbol utama keindahan, kemakmuran, dan kesuburan. Wisnu juga selalu membawa bunga teratai di tangannya dan hampir semua dewa dari dewa Hindu yang duduk di teratai atau membawa bunga.
+                
+                Beberapa fakta menarik adalah bahwa tanaman teratai tumbuh di air, memiliki akar dalam ilus atau lumpur, dan menyebarkan bunga di udara di atas.</p>
+             
+          </div>
+          <hr>
+
+          <nav aria-label="...">
+              <ul class="pagination" style="display: flex; justify-content: center;">
+                <li class="page-item disabled">
+                  <a class="page-link">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active" aria-current="page">
+                  <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
+      </div>
+
+  </div>
+  </section>
+</section>
+<!-- akhir kunjungan wisatawan -->
+
+    <!-- akhir wawasan -->
+
+
+    <!-- location dan kontak -->
+    <section class="contact">
+        <div class="container">
+          <div class="judul mt-5 mb-3 text-center">
+            <h2>Contact And Location</h2>
+          </div>
+          <div class="row">
+            <div class="col-6 contact-kiri">
+              <h4 class="text-center"> CONTACT US</h4>
+              <p>
+                Jl. Goa Gong, Ungasan, Jimbaran 80362, Bali- Indonesia<br>
+
+                Phone 1: +62361 8481800<br>
+                Phone 2: 081239011332<br>
+                Fax: +62361 8481900<br>
+                +62 812-3901-277<br>
+                Email:  reservation@beverlyhillsbali.com
+              </p>
+            </div>
+
+            <div class="col-6 contact-kanan">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3942.7209711344894!2d115.16491761433812!3d-8.812262892569466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd244cf54e1dec7%3A0x1988663e064f5a51!2sGaruda%20Wisnu%20Kencana%20Cultural%20Park!5e0!3m2!1sid!2sid!4v1642768930059!5m2!1sid!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    <!-- akhir lokasi dan kontak -->
+
+
+    <!-- hubungi kami -->
+
+    <section class="hubungi mt-5 bg-primary mb-5" id="hubungi">
+        <div class="container">
+            <div class="judul-bungi text-center mt-5 mb-4">
+                <h2>Hubungi Kami</h2>
+            </div>
+            <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress" class="form-label">Address</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress2" class="form-label">Address 2</label>
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputCity" class="form-label">City</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">State</label>
+                  <select id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+                <div class="col-md-2">
+                  <label for="inputZip" class="form-label">Zip</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Check me out
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12 d-block text-center">
+                  <button type="submit" class="btn btn-success mb-4">Send It</button>
+                </div>
+              </form>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+      <div class="bawah">
+      <div class="row">
+        <div class="col-4 copi">
+          @Copyright 2021 Surya Dwipayana
+        </div>
+
+        <div class="col-4 tengah">
+           <a href="#beranda"><p>Beranda</p></a>
+           <a href="#objek"> <p>Object Wisata</p></a>
+            <a href="#sarana"> <p>Sarana & Akomodasi</p></a>
+            <a href="#wawasan"> <p>Wawasan</p></a>
+        </div>
+
+        <div class="col-4 kanan">
+          <h2>PT Sunandwah Creative Website</h2>
+          <p>Menjadikan Masalah sebagai pelajaran</p>
+        </div>
+      </div>
+    </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0275d8" fill-opacity="1" d="M0,96L40,128C80,160,160,224,240,229.3C320,235,400,181,480,181.3C560,181,640,235,720,218.7C800,203,880,117,960,101.3C1040,85,1120,139,1200,170.7C1280,203,1360,213,1400,218.7L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+    </footer>
+
+
+    <!-- akhir hubungi kami -->
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script type="text/javascript" src="vanilla-tilt.min.js"></script>
+<script src="./javascript/main.js"></script>
+
+<script type="text/javascript">
+
+  const audio = document.getElementById("musik");
+  const play = false;
+  function togglePlay(){
+      audio.play();
+  terakhir = document.querySelector('#box');
+  terakhir.classList('hide');
+  }
+
+</script>
+
+</body>
+</html>
